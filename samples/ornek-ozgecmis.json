@@ -1,0 +1,48 @@
+{
+  "basics": {
+    "name": "Ayşe Yılmaz",
+    "label": "Backend Developer",
+    "email": "ayse.yilmaz@example.com",
+    "phone": "+90 555 123 45 67",
+    "url": "https://linkedin.com/in/ayseyilmaz",
+    "summary": "Java ve Spring Boot ile ölçeklenebilir backend servisleri geliştiren yazılım mühendisi. Mikroservis mimarisi, REST API tasarımı ve CI/CD süreçlerinde deneyimli."
+  },
+  "work": [
+    {
+      "company": "ACME Yazılım",
+      "position": "Backend Developer",
+      "startDate": "2021",
+      "endDate": "2024",
+      "highlights": [
+        "Java ve Spring Boot ile 6 mikroservis geliştirdim.",
+        "PostgreSQL üzerinde çalışan REST API tasarladım ve yanıt süresini %40 iyileştirdim.",
+        "Docker ve GitHub Actions ile deployment sürecini otomatikleştirdim.",
+        "5 kişilik ekibe teknik liderlik ettim."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Örnek Üniversitesi",
+      "area": "Bilgisayar Mühendisliği",
+      "studyType": "Lisans",
+      "startDate": "2017",
+      "endDate": "2021"
+    }
+  ],
+  "skills": [
+    { "name": "Java" },
+    { "name": "Spring Boot" },
+    { "name": "PostgreSQL" },
+    { "name": "Docker" },
+    { "name": "Git" },
+    { "name": "REST API" },
+    { "name": "React" }
+  ],
+  "projects": [
+    {
+      "name": "E-ticaret Sipariş Servisi",
+      "description": "Spring Boot, PostgreSQL ve Docker kullanılarak geliştirilen sipariş yönetimi servisi."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "backend: run",
+      "type": "shell",
+      "command": "mvn spring-boot:run",
+      "options": {
+        "cwd": "${workspaceFolder}/backend",
+        "env": {
+          "PATH": "/opt/homebrew/bin:${env:PATH}"
+        }
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "group": "ats",
+        "panel": "dedicated",
+        "reveal": "always",
+        "clear": true
+      }
+    },
+    {
+      "label": "frontend: install",
+      "type": "shell",
+      "command": "npm install",
+      "options": {
+        "cwd": "${workspaceFolder}/frontend"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "group": "ats",
+        "panel": "dedicated",
+        "reveal": "silent",
+        "clear": true
+      }
+    },
+    {
+      "label": "frontend: dev",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": {
+        "cwd": "${workspaceFolder}/frontend"
+      },
+      "dependsOn": "frontend: install",
+      "problemMatcher": [],
+      "presentation": {
+        "group": "ats",
+        "panel": "dedicated",
+        "reveal": "always",
+        "clear": true
+      }
+    },
+    {
+      "label": "Start ATS (backend + frontend)",
+      "dependsOrder": "parallel",
+      "dependsOn": ["backend: run", "frontend: dev"],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "group": "ats",
+        "panel": "dedicated",
+        "reveal": "always"
+      }
+    },
+    {
+      "label": "Stop ATS (free ports 8080 & 3000)",
+      "type": "shell",
+      "command": "lsof -ti:8080 | xargs kill -9 2>/dev/null; lsof -ti:3000 | xargs kill -9 2>/dev/null; echo 'Ports 8080 and 3000 freed.'",
+      "problemMatcher": [],
+      "presentation": {
+        "group": "ats",
+        "panel": "dedicated",
+        "reveal": "always"
+      }
+    }
+  ]
+}

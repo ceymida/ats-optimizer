@@ -1,0 +1,19 @@
+Senior Java Backend Developer
+
+We are looking for a Senior Java Backend Developer to join our growing engineering team.
+
+Requirements:
+- Strong experience with Java and Spring Boot
+- Experience designing REST APIs and microservices architecture
+- Hands-on experience with Kafka or RabbitMQ for event-driven systems
+- Kubernetes and Docker experience
+- PostgreSQL or MongoDB knowledge
+- AWS cloud experience is a plus
+- Experience with CI/CD pipelines and Git
+- Agile/Scrum team experience
+- Strong problem solving and communication skills
+
+Responsibilities:
+- Design, develop and maintain scalable backend services
+- Collaborate with frontend, DevOps and product teams
+- Participate in code reviews and improve code quality

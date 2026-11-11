@@ -1,0 +1,23 @@
+Ayşe Yılmaz
+Backend Developer
+ayse.yilmaz@example.com | +90 555 123 45 67 | linkedin.com/in/ayseyilmaz | github.com/ayseyilmaz
+
+ÖZET
+Java ve Spring Boot ile ölçeklenebilir backend servisleri geliştiren yazılım mühendisi.
+Mikroservis mimarisi, REST API tasarımı ve CI/CD süreçlerinde deneyimli.
+
+DENEYİM
+Backend Developer, ACME Yazılım, 2021 - 2024
+- Java ve Spring Boot ile 6 mikroservis geliştirdim.
+- PostgreSQL üzerinde çalışan REST API tasarladım ve yanıt süresini %40 iyileştirdim.
+- Docker ve GitHub Actions ile deployment sürecini otomatikleştirdim.
+- 5 kişilik ekibe teknik liderlik ettim.
+
+EĞİTİM
+Bilgisayar Mühendisliği, Örnek Üniversitesi, 2017 - 2021
+
+YETENEKLER
+Java, Spring Boot, PostgreSQL, Docker, Git, REST API, React, CI/CD
+
+PROJELER
+E-ticaret Sipariş Servisi: Spring Boot, PostgreSQL ve Docker kullanılarak geliştirilen sipariş yönetimi servisi.

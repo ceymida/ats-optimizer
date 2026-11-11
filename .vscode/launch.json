@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ATS: Debug Backend (Spring Boot)",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "com.ceyda.atsoptimizer.AtsOptimizerApplication",
+      "projectName": "ats-optimizer",
+      "cwd": "${workspaceFolder}/backend",
+      "env": {
+        "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"
+      },
+      "console": "internalConsole"
+    },
+    {
+      "name": "ATS: Frontend (Next.js)",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "${workspaceFolder}/frontend",
+      "skipFiles": ["<node_internals>/**"],
+      "console": "integratedTerminal"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "ATS: Start All (Debug Backend + Frontend)",
+      "configurations": ["ATS: Debug Backend (Spring Boot)", "ATS: Frontend (Next.js)"],
+      "stopAll": true
+    }
+  ]
+}
